@@ -505,31 +505,6 @@ echo 'The $$ is ' $$
 ps
 ```
  
-chmod 777 scriptest.sh
- 
-./scriptest.sh 1 2 3
-
-## OUTPUT
-
- 
-ls file1
-## OUTPUT
-
-echo $?
-## OUTPUT 
-./one
-bash: ./one: Permission denied
- 
-echo $?
-## OUTPUT 
- 
-abcd
- 
-echo $?
- ## OUTPUT
-
-
- 
 # mis-using string comparisons
 
 cat < strcomp.sh 
@@ -566,6 +541,7 @@ chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/7c1e85d6-7604-45f7-b571-a84c53f64e7f)
 
 
 # check file ownership
@@ -593,6 +569,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/692ca416-ad6a-4f9a-b381-e5cd2c1f86ae)
 
 # check if with file location
 cat>ifnested.sh 
@@ -639,6 +616,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/266ab260-5c8c-4788-aafd-ca4d4bbcc5f2)
 
 
 
@@ -682,7 +660,8 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
-##OUTPUT
+## OUTPUT
+![image](https://github.com/user-attachments/assets/88d8aebb-d32a-4987-8426-a413022efbb7)
 
 # check if a file
 cat > ifnested.sh 
@@ -731,7 +710,8 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
+## OUTPUT
+![image](https://github.com/user-attachments/assets/d510b40b-1461-4b10-ba36-0ad953c1e922)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -760,6 +740,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/603e8764-d92e-4264-b9a7-0ad9c297ed88)
 
 
 # testing compound comparisons
@@ -776,6 +757,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/ac9556b9-5b7b-4419-9000-511e33393da2)
 
 # using the case command
 cat >casecheck.sh 
@@ -795,7 +777,9 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+ ## output
+ ![image](https://github.com/user-attachments/assets/5a290371-a1f2-4fb1-b617-2bc60838f53a)
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -811,7 +795,10 @@ $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
  
- 
+## output
+![image](https://github.com/user-attachments/assets/5cc4d37a-4158-45aa-a03f-44a315a0c4bd)
+
+
 cat untiltest.sh 
 ```bash
 \#using the until command
@@ -824,7 +811,9 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
- 
+ ## OUTPUT
+ ![image](https://github.com/user-attachments/assets/db18c0c5-9081-4386-a68c-9c355ce51351)
+
  
 cat forin1.sh 
 ```bash
@@ -837,8 +826,10 @@ done
  ```
  
 $ chmod 755 forin1.sh
- 
- 
+ $ ./forin2.sh
+ ## OUTPUT
+ ![image](https://github.com/user-attachments/assets/8d237417-b633-4e4a-9ef5-d3352833d603)
+
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -850,7 +841,10 @@ done
  ```
  
 $ chmod 755 forin2.sh
- 
+ $ ./forin3.sh
+ ## OUTPUT
+ ![image](https://github.com/user-attachments/assets/a758bb78-275a-4dbd-af4f-1466f7d065d9)
+
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -886,7 +880,7 @@ done
 ```
 $ chmod 755 forin1.sh
 
-## OUTPUT
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -899,6 +893,7 @@ done
 ```
 $ chmod 777 forinfile.sh
 $ cat cities
+```
 Hyderabad
 Alampur
 Basara
@@ -906,8 +901,9 @@ Warangal
 Adilabad
 Bhadrachalam
 Khammam
+```
 
-## OUTPUT
+
 
 
 cat forctype.sh 
@@ -922,6 +918,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/a5b30984-08a4-44e8-9208-20105171a0c3)
 
 cat forctype1.sh 
 ```bash
@@ -935,6 +932,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/28a50bca-a0f9-48b4-8e32-736a52421e50)
 
 cat fornested1.sh 
 ```bash
@@ -953,6 +951,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
+![image](https://github.com/user-attachments/assets/f0959f28-d0ea-4596-af33-ce9ee42c98bd)
 
  
 cat forbreak.sh 
@@ -969,12 +968,13 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
 
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
- 
+ ## OUTPUT
+![image](https://github.com/user-attachments/assets/2b9ff9eb-c421-43f7-be17-80534ae70235)
+
 cat forbreak.sh 
 ```bash
 #!/bin/bash
@@ -994,10 +994,14 @@ echo "The for loop is completed“
 $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
-## OUTPUT
+
  
 cat exread.sh 
+## OUTPUT
+![image](https://github.com/user-attachments/assets/7e0a5401-2cf3-4890-9a6b-28f68bab86d4)
+
 ```bash
+
 #!/bin/bash
 # testing the read command
 echo -n "Enter your name: "
@@ -1009,6 +1013,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/bc316ef4-2b6c-4eac-8cb4-62f1cd22b96e)
 
 
  cat exread1.sh
@@ -1020,12 +1025,14 @@ echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
 
-## OUTPUT
+
 
 
 
 $ ./exread1.sh 
- 
+## OUTPUT
+ ![image](https://github.com/user-attachments/assets/0058d1db-7642-4214-b403-2feda95c8ec3)
+
 cat funcex.sh
 ```bash
 #!/bin/bash
@@ -1041,11 +1048,16 @@ else
 echo "Usage: badtest1 a b"
 fi
 ```
+./funcex.sh
 ## OUTPUT
- ./funcex.sh 
+![image](https://github.com/user-attachments/assets/a64e3dea-a0b2-4ef6-87dc-ce5586af343d)
+
+ 
 
  
  ./funcex.sh 1 2
+ ## OUTPUT
+![image](https://github.com/user-attachments/assets/ed654d0b-6131-4054-9315-07658e9fbd95)
 
  
 cat argshift.sh
@@ -1059,6 +1071,8 @@ done
 $ chmod 777 argshift.sh
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/496372ba-f016-4811-b096-d4c8346fe431)
+
 $ ./argshift.sh 1 2 3
  
  cat argshift1.sh
@@ -1076,6 +1090,8 @@ done
 ```
 $ chmod 777 argshift.sh
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/5a87aa69-a179-43b9-bcd7-ef646c9cefef)
+
 $ ./argshift.sh 1 2 3
  
 cat argshift.sh
@@ -1088,9 +1104,11 @@ while (( "$#" )); do
 done
 set +x
 ```
-## OUTPUT
+
  ./argshift.sh 1 2 3
- 
+ ## OUTPUT
+ ![image](https://github.com/user-attachments/assets/948324ae-43c7-49d1-8e2e-bd3f62323c32)
+
  
 cat > nc.awk
 ```bash
@@ -1121,7 +1139,8 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![image](https://github.com/user-attachments/assets/5a974231-3dca-4896-a728-9f7c2df00e26)
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1148,6 +1167,7 @@ else
 fi
 ```
 ## OUTPUT 
+![image](https://github.com/user-attachments/assets/715391d3-abad-4f7b-905f-e2b063b2bca0)
 
 
 # RESULT:
